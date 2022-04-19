@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FyodoRaev</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href ="styles.css">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#articles" class="bar-item button hide-small"><i class="fa fa-th"></i> ARTICLES</a>
+    <a href="https://github.com/FyodoRaev" class="bar-item button hide-small"><i class="fa fa-code" aria-hidden="true"></i> GITHUB</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#articles" class="bar-item button" onclick="toggleFunction()">ARTICLES</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">HELLO! <span class="hide-small">MY NAME IS</span> FYODOR</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64">
+  <h3 class="center">ABOUT ME</h3>
+  <p class="center"><em>If you like math and machine learning let's be friends!</em></p>
+  <p>So, I'll tell you a little about myself. As you have already understood , I am Fyodor . I really love mathematics and machine learning in particular , so I have been self - studying these topics for quite a long time , usually using books and lectures from MIPT(МФТИ) .I read the book "Grokking deep learning" and the author, as one of the most important points of growing in this area, highlighted the search for like-minded people, so if you also like such things, let's become friends!</p>
+  <div class="row">
+
+<div class="col m6 hide-small padding-large">
+    <p>On this site I will post my works , thoughts and what I found interesting </p>
+    </div>
+</div>
+
+<div class="content container padding-64" id="articles">
+  <h3 class="center">Articles</h3>
+  <a href = "Why do you need to study a lot.html"><h2>Why do you need to study a lot? <i class="fa fa-hourglass-start" aria-hidden="true"></i></h2></a>
+  <hr>
+  <a href = "\Notion-pages\Programmin 82fe0.html"><h2>Conpesctus of deep learning concepts and math <i class="fa fa-university" aria-hidden="true"></i></h2></a>
+  <hr>
+  <a href = "\Notion-pages\Mathematic 8132a.html"><h2>Pure mathematics<i class="fa fa-university" aria-hidden="true"></i></h2></a>
+</div>
+
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+     <a href = 'https://t.me/FyodoRaev'><i class="fa fa-telegram" aria-hidden="true"></i></a>
+     <a href = 'https://www.instagram.com/sailorr_r/'><i class="fa fa-instagram hover-opacity"></i></a>
+     <a href = 'https://vk.com/napepspeps'><i class="fa fa-vk" aria-hidden="true"></i></a>
+  </div>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+
+</script>
+
+</body>
+</html>
