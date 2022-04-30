@@ -26,6 +26,27 @@ html {
 }
 
 
+/*Main text/logo */
+
+
+.heading {
+  font-size: 3vw;
+  text-shadow: 4px 4px 0px #864c4c;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ##### */
 .bgimg-1 {
   background-image: url('images/mainPic.jpg');
   min-height: 100%;
@@ -450,7 +471,7 @@ a {
 .btn:disabled:hover {
   box-shadow: none
 }
-
+#fff;
 .badge,
 .tag {
   background-color: #000;
@@ -542,7 +563,7 @@ a {
 .dropdown-content {
   cursor: auto;
   color: #000;
-  background-color: #fff;
+  background-color: #864c4c;
   display: none;
   position: absolute;
   min-width: 160px;
@@ -560,7 +581,9 @@ a {
 }
 
 
-
+.navMenu {
+  background-color: #777;
+}
 .navMenu a {
   color: #302f26;
   text-decoration: none;
@@ -574,7 +597,7 @@ a {
 }
 
 .navMenu a:hover {
-  color: #645f42;
+  color: #745050;
 }
 
 .navMenu .dot {
@@ -623,7 +646,7 @@ a {
 .sidebar {
   height: 100%;
   width: 200px;
-  background-color: #fff;
+  background-color: #864c4c;
   position: fixed !important;
   z-index: 1;
   overflow: auto
