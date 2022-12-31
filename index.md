@@ -1,6 +1,6 @@
 # CV
 1. My name is __Fyodor Raevskiy__  
-   <img src="mainPic.png" alt="Picture"  style="height: 70%; width:70%;"/>
+   <img src="mainPic.png" alt="Picture"  style="height: 50%; width:50%;"/>
 
 2. Contacts:
    - Telegram: @FyodoRaev
